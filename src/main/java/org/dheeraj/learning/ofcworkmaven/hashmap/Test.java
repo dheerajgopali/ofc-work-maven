@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Test {
     public static void main(String[] args) {
         System.out.println();
-        HashMap<String, String> map = new HashMap<>(10, .75f);
+        HashMap<String, String> map = new HashMap(10, .75f);
         /*for (int i = 0; i < 100; i++) {
             System.out.print(i+" - ");
             int n=i;
