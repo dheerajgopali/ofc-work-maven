@@ -1,4 +1,4 @@
-package org.dheeraj.learning.entities;
+package org.dheeraj.learning.ofcworkmaven.dto;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;

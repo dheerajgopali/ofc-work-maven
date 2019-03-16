@@ -1,4 +1,4 @@
-package org.dheeraj.learning.ofcworkmaven;
+package org.dheeraj.learning.ofcworkmaven.dao.util;
 
 public class DegradationIdentificationUtil2 {
     static double mean;

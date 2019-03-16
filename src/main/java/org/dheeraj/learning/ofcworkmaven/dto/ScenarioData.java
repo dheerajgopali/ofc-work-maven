@@ -1,4 +1,4 @@
-package org.dheeraj.learning.entities;
+package org.dheeraj.learning.ofcworkmaven.dto;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 public class ScenarioData {
     String testname;
     String latestbuild;
-    Map<String, ParamData> map = new HashMap<>();
+    Map<String, ParamData> map = new HashMap();
 
     public String getTestname() {
         return testname;

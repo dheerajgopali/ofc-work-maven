@@ -1,4 +1,7 @@
-package org.dheeraj.learning.entities;
+package org.dheeraj.learning.ofcworkmaven.dto;
+
+import java.beans.Transient;
+
 
 public class ParamData{
     String name;
@@ -6,9 +9,10 @@ public class ParamData{
     Double standardDeviation;
     Double latestBuildValue;
     Double noOfValidRecords = 0.0;
-    Double tempsum = 0.0;
-    Double tempSD = 0.0;
+    transient Double tempsum = 0.0;
+    transient Double tempSD = 0.0;
     Double degradationPercentage;
+    boolean isDegraded;
 
     public ParamData(String name) {
         this.name = name;
@@ -76,6 +80,14 @@ public class ParamData{
 
     public void setDegradationPercentage(Double degradationPercentage) {
         this.degradationPercentage = degradationPercentage;
+    }
+
+    public boolean isDegraded() {
+        return isDegraded;
+    }
+
+    public void setDegraded(boolean degraded) {
+        isDegraded = degraded;
     }
 
     public void calcMean(){

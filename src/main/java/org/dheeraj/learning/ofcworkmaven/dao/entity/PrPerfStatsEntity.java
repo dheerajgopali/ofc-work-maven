@@ -1,4 +1,4 @@
-package org.dheeraj.learning.entities;
+package org.dheeraj.learning.ofcworkmaven.dao.entity;
 
 import javax.persistence.*;
 import java.math.BigDecimal;

@@ -21,8 +21,8 @@
         <!--<property name="hibernate.hbm2ddl.auto">validate</property>-->
 
         <!-- Annotated entity classes -->
-        <!--<mapping class="org.dheeraj.learning.entities.PrPerfStatsEntity"/>-->
-        <mapping class="org.dheeraj.learning.entities.PrDataPerformancestatsEntity"/>
+        <!--<mapping class="org.dheeraj.learning.dao.entity.PrPerfStatsEntity"/>-->
+        <mapping class="org.dheeraj.learning.ofcworkmaven.dao.entity.PrDataPerformancestatsEntity"/>
 
     </session-factory>
 </hibernate-configuration>
