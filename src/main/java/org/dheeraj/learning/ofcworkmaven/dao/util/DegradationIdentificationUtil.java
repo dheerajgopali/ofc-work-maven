@@ -208,41 +208,4 @@ public class DegradationIdentificationUtil {
 
         return temp;
     }
-
-    /* Method to  READ all the employees *//*
-    public void getStandardDeviation(List resultDTOs) {
-        int noOfRecordsWithTotalreqtime = 0, noOfRecordsWithRDBIOCount = 0;
-        double sumTotalReqtime = 0.0, sumRDBIOCount =0.0;
-        for (Iterator iterator = resultDTOs.iterator(); iterator.hasNext(); ) {
-            PerfStatsDTO stats = (PerfStatsDTO) iterator.next();
-            if (stats.getTotalreqtime() != null) {
-                sumTotalReqtime += stats.getTotalreqtime().doubleValue();
-                noOfRecordsWithTotalreqtime++;
-            }
-            if(stats.getRdbiocount() != null) {
-                sumRDBIOCount += stats.getRdbiocount().doubleValue();
-                noOfRecordsWithRDBIOCount++;
-            }
-        }
-
-        double meanTotalreqtime = sumTotalReqtime / noOfRecordsWithTotalreqtime;
-        double meanRdbiocount = sumRDBIOCount/ noOfRecordsWithRDBIOCount;
-        scenarioData.getMap().get("totalreqtime").setMean(meanTotalreqtime);
-        scenarioData.getMap().get("rdbiocount").setMean(meanRdbiocount);
-
-        double sdTotalreqtime = 0.0, sdRdbiocount = 0.0;
-        for (Iterator iterator = resultDTOs.iterator(); iterator.hasNext(); ) {
-            PerfStatsDTO stats = (PerfStatsDTO) iterator.next();
-
-            if (stats.getTotalreqtime() != null) {
-                sdTotalreqtime += Math.pow(stats.getTotalreqtime().doubleValue() - meanTotalreqtime, 2);
-            }
-            if (stats.getRdbiocount() != null) {
-                sdRdbiocount += Math.pow(stats.getRdbiocount().doubleValue() - meanRdbiocount, 2);
-            }
-        }
-
-        scenarioData.getMap().get("totalreqtime").setStandardDeviation(Math.sqrt(sdTotalreqtime / noOfRecordsWithTotalreqtime));
-        scenarioData.getMap().get("rdbiocount").setStandardDeviation(Math.sqrt(sdRdbiocount / noOfRecordsWithRDBIOCount));
-    }*/
 }
